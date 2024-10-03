@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    flex-direction: column;
+    font-family: "Chakra Petch", sans-serif;
+    
+}
+.container{
+    width:35vw;
+    height: 60vh;
+    background-color: rgb(67, 255, 246);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 9px solid rgb(0, 217, 255);
+}
+h1{
+    font-weight: 900;
+    font-size: 40px;
+}
+.box{
+    row-gap: 40px;
+    margin-bottom: 10%;
+}
+h3{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+input{
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffba08;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #f72585;
+    }
+}
+#wrong-guess{
+    color: red;
+    display: none;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+#right-guess{
+    color: green;
+    display: none;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-top: 10px;
+    background-color: #53acc7;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: larger;
+    font-weight:600;
+}
+i{
+    margin: 20px 30px;
+    cursor: pointer;
+    color: white;
+    transition:color 1s ease;
+    &:hover{
+        color: #f72585;
+    }
+}
+
+@media (max-width:600px){
+    .container{
+        width: 90vw;
+    }
+    h1{
+        font-size: 27px;
+        margin-bottom: 40px;
+    }
+    h3{
+        font-size: 17px;
+        margin-top: 40px;
+        text-align: center;
+        font-weight: 800;
+    }
+    .box{
+        display:contents;
+    }
+    input{
+        width: 300px;
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+    }
+    p{
+        font-size: 18px;
+    }
+    footer{
+        height: 17vh;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 900px){
+    .container{
+        width: 80vw;
+    }
+}
+
+@media(max-width: 380px){
+    .container{
+        width: 90vw;
+    }
+    h1{
+        font-size: 25px;
+    }
+    footer{
+        height: 15vh;
+    }
+    p{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
